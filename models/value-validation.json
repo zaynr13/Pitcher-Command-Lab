@@ -1,0 +1,35 @@
+{
+  "selected": "cross_fitted_stack",
+  "models": {
+    "linear": {
+      "validation_rmse": 0.22851260488837466,
+      "test_rmse": 0.2262365113503994,
+      "test_mae": 0.11260159759686865
+    },
+    "tree": {
+      "validation_rmse": 0.22641913492497473,
+      "test_rmse": 0.22406607281166604,
+      "test_mae": 0.10799196583630949
+    },
+    "linear_plus_tree": {
+      "validation_rmse": 0.22653946583516232,
+      "test_rmse": 0.22426390147789071,
+      "test_mae": 0.10925597657295388
+    },
+    "cross_fitted_stack": {
+      "validation_rmse": 0.22627844849841466,
+      "test_rmse": 0.223951739431039,
+      "test_mae": 0.10746752242262483
+    }
+  },
+  "selection": "July validation RMSE only",
+  "test_note": "Developmental August+ comparison; not a new untouched holdout",
+  "parameters": {
+    "iterations": 150,
+    "leaves": 15,
+    "minimum_leaf": 300,
+    "l2": 30,
+    "learning_rate": 0.08
+  },
+  "n_test": 233855
+}

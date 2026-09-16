@@ -1,0 +1,190 @@
+{
+  "model_sha256": "7ee34d23b1527d22d00b1273b79fa3be83b77f3081ad84c4dfd4ea34b3dd05a2",
+  "dates": [
+    "2026-09-01",
+    "2026-09-12"
+  ],
+  "n": 47502,
+  "games": 161,
+  "coordinate_shift_mean_inches": {
+    "x": -0.08210612133868438,
+    "z": 0.959274176295827
+  },
+  "models": {
+    "swing": {
+      "n": 47207,
+      "log_loss": 0.4916255348185842,
+      "brier_multiclass": 0.326642507315507,
+      "top_label_ece": 0.007932079163784744,
+      "calibration": [
+        {
+          "n": 8833,
+          "predicted": 0.5494134961144889,
+          "observed": 0.5496433827691611
+        },
+        {
+          "n": 8757,
+          "predicted": 0.64973829038426,
+          "observed": 0.6351490236382322
+        },
+        {
+          "n": 8936,
+          "predicted": 0.7498940622496819,
+          "observed": 0.7378021486123545
+        },
+        {
+          "n": 9516,
+          "predicted": 0.851376022909157,
+          "observed": 0.8461538461538461
+        },
+        {
+          "n": 11164,
+          "predicted": 0.9555637127465428,
+          "observed": 0.947778573987818
+        }
+      ],
+      "roc_auc": 0.8407656220443852
+    },
+    "called": {
+      "n": 24510,
+      "log_loss": 0.15364588341808824,
+      "brier_multiclass": 0.09336818826456167,
+      "top_label_ece": 0.018034440187025044,
+      "calibration": [
+        {
+          "n": 1168,
+          "predicted": 0.548243780546133,
+          "observed": 0.5590753424657534
+        },
+        {
+          "n": 1317,
+          "predicted": 0.6507680739713521,
+          "observed": 0.6583143507972665
+        },
+        {
+          "n": 1658,
+          "predicted": 0.7516851777674456,
+          "observed": 0.793124246079614
+        },
+        {
+          "n": 2447,
+          "predicted": 0.8542658793197405,
+          "observed": 0.9047813649366572
+        },
+        {
+          "n": 17745,
+          "predicted": 0.9834253564657105,
+          "observed": 0.9962242885319809
+        }
+      ],
+      "roc_auc": 0.9853612552473742
+    },
+    "contact": {
+      "n": 22697,
+      "log_loss": 1.0404926839486364,
+      "brier_multiclass": 0.6000400936496701,
+      "top_label_ece": 0.021680983852090312,
+      "calibration": [
+        {
+          "n": 2150,
+          "predicted": 0.3748670098736175,
+          "observed": 0.3841860465116279
+        },
+        {
+          "n": 10708,
+          "predicted": 0.4555094161219488,
+          "observed": 0.44742248785954425
+        },
+        {
+          "n": 6840,
+          "predicted": 0.5404670668002107,
+          "observed": 0.49985380116959066
+        },
+        {
+          "n": 1788,
+          "predicted": 0.638198579502159,
+          "observed": 0.5900447427293065
+        },
+        {
+          "n": 521,
+          "predicted": 0.7415800902073384,
+          "observed": 0.727447216890595
+        },
+        {
+          "n": 339,
+          "predicted": 0.8502843726609415,
+          "observed": 0.8377581120943953
+        },
+        {
+          "n": 351,
+          "predicted": 0.9545324572878638,
+          "observed": 0.9829059829059829
+        }
+      ]
+    },
+    "hit": {
+      "n": 8327,
+      "log_loss": 0.9800122938128563,
+      "brier_multiclass": 0.5044234915466991,
+      "top_label_ece": 0.004002945875782481,
+      "calibration": [
+        {
+          "n": 13,
+          "predicted": 0.46533525739270054,
+          "observed": 0.6153846153846154
+        },
+        {
+          "n": 66,
+          "predicted": 0.5757397455829023,
+          "observed": 0.5757575757575758
+        },
+        {
+          "n": 7003,
+          "predicted": 0.6588002683813355,
+          "observed": 0.6554333856918464
+        },
+        {
+          "n": 1236,
+          "predicted": 0.7204564518965363,
+          "observed": 0.7257281553398058
+        },
+        {
+          "n": 9,
+          "predicted": 0.8096229924270792,
+          "observed": 0.6666666666666666
+        }
+      ]
+    },
+    "exit_velocity": {
+      "n": 8306,
+      "rmse": 14.243998941765371,
+      "mae": 10.768074938192592
+    },
+    "launch_angle": {
+      "n": 8309,
+      "rmse": 26.85774776298992,
+      "mae": 20.845832527556013
+    },
+    "xwoba": {
+      "n": 8252,
+      "rmse": 0.3764154666297545,
+      "mae": 0.28744371628594756
+    },
+    "run_value": {
+      "n": 47502,
+      "rmse": 0.22784300197163604,
+      "mae": 0.11027036873555258,
+      "linear_baseline_rmse": 0.23039186665815986,
+      "paired_game_bootstrap": {
+        "games": 161,
+        "mean_mse_reduction": 0.0011679786747843704,
+        "bootstrap_95_interval": [
+          0.0010481334252133274,
+          0.001282972797116814
+        ],
+        "replicates": 1000
+      }
+    }
+  },
+  "scope": "Previously unused 12-day external window. Conditional response evaluation uses observed physics; not end-to-end target-policy validation. ABS/behavior changes remain after coordinate conversion."
+}

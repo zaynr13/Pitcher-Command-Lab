@@ -1,0 +1,212 @@
+{
+  "status": "command baseline only; not production validated",
+  "source_files": {
+    "targets-2025.csv.gz": {
+      "sha256": "b2a26935bbb0798d14dd4cbd939bc443b2db9e84839a5004ca9c41690bc5c4f5"
+    },
+    "pbp-2025.csv.gz": {
+      "sha256": "2829800eaf8e30d0243675f37c3409aebe21dd06609c35bb19ddaffef1467c86"
+    }
+  },
+  "target_fields": [
+    "game_pk",
+    "play_id",
+    "park",
+    "y_depth_ft",
+    "plate_x_in",
+    "plate_z_in",
+    "release_s",
+    "status",
+    "target_frame",
+    "naive_x_in",
+    "naive_z_in",
+    "plausible",
+    "inferred_x_in",
+    "inferred_z_in"
+  ],
+  "pbp_fields": [
+    "game_pk",
+    "play_id",
+    "date",
+    "game_type",
+    "venue",
+    "home_team",
+    "pitcher_id",
+    "pitcher",
+    "batter_id",
+    "pitch_type",
+    "description",
+    "sz_top",
+    "sz_bot",
+    "sz_top_ref",
+    "sz_bot_ref",
+    "x0",
+    "y0",
+    "z0",
+    "vx0",
+    "vy0",
+    "vz0",
+    "ax",
+    "ay",
+    "az",
+    "plate_x",
+    "plate_z"
+  ],
+  "target_rows": 660054,
+  "pbp_rows": 724005,
+  "matched_targets": 660054,
+  "usable_regular_season": 643403,
+  "unique_pitchers": 870,
+  "unique_hitters": 673,
+  "date_range": [
+    "2025-03-18",
+    "2025-09-28"
+  ],
+  "missing_fraction": {
+    "game_pk": 0.0,
+    "play_id": 0.0,
+    "park": 0.0,
+    "y_depth_ft": 0.0,
+    "plate_x_in": 0.0,
+    "plate_z_in": 0.0,
+    "release_s": 0.0,
+    "status": 0.0,
+    "target_frame": 0.008000860535653144,
+    "naive_x_in": 0.008000860535653144,
+    "naive_z_in": 0.008000860535653144,
+    "plausible": 0.0,
+    "inferred_x_in": 0.01275350198620113,
+    "inferred_z_in": 0.01275350198620113,
+    "date": 0.0,
+    "game_type": 0.0,
+    "venue": 0.0,
+    "home_team": 0.0,
+    "pitcher_id": 0.0,
+    "pitcher": 0.0,
+    "batter_id": 0.00047117357064725007,
+    "pitch_type": 0.0,
+    "description": 0.00047117357064725007,
+    "sz_top": 0.0,
+    "sz_bot": 0.0,
+    "sz_top_ref": 0.0,
+    "sz_bot_ref": 0.0,
+    "x0": 0.0,
+    "y0": 0.0,
+    "z0": 0.0,
+    "vx0": 0.0,
+    "vy0": 0.0,
+    "vz0": 0.0,
+    "ax": 0.0,
+    "ay": 0.0,
+    "az": 0.0,
+    "plate_x": 0.0,
+    "plate_z": 0.0
+  },
+  "pitch_types": {
+    "FF": 206021,
+    "SI": 99128,
+    "SL": 92791,
+    "CH": 66413,
+    "ST": 49008,
+    "FC": 48558,
+    "CU": 42950,
+    "FS": 21206,
+    "KC": 11665,
+    "SV": 3177,
+    "FA": 718,
+    "EP": 646,
+    "FO": 636,
+    "CS": 346,
+    "KN": 123,
+    "UN": 11,
+    "SC": 6
+  },
+  "pitcher_threshold_sensitivity": {
+    "300": 504,
+    "500": 427,
+    "750": 336,
+    "1000": 219
+  },
+  "hitter_pitches_seen_sensitivity": {
+    "500": 403,
+    "750": 339,
+    "1000": 287,
+    "1500": 196
+  },
+  "coordinate_max_difference_inches": 1.4210854715202004e-14,
+  "split": {
+    "train_before": "2025-07-01",
+    "validation_before": "2025-08-01",
+    "test_after_inclusive": "2025-08-01",
+    "train_n": 330388,
+    "validation_n": 98638,
+    "test_n": 214377
+  },
+  "tuning": {
+    "50": {
+      "n": 98638,
+      "rmse_x_inches": 8.660322719319007,
+      "rmse_z_inches": 10.296849662365146,
+      "negative_log_likelihood": 7.229588636716679,
+      "coverage_50": 0.5368316470325838,
+      "coverage_80": 0.8028447454327947
+    },
+    "100": {
+      "n": 98638,
+      "rmse_x_inches": 8.681825104560955,
+      "rmse_z_inches": 10.321265023431323,
+      "negative_log_likelihood": 7.243415245776848,
+      "coverage_50": 0.5448812830754881,
+      "coverage_80": 0.808633589488838
+    },
+    "300": {
+      "n": 98638,
+      "rmse_x_inches": 8.74884082079317,
+      "rmse_z_inches": 10.40197449722502,
+      "negative_log_likelihood": 7.280104846679635,
+      "coverage_50": 0.5504065370344087,
+      "coverage_80": 0.8114114235892861
+    },
+    "1000": {
+      "n": 98638,
+      "rmse_x_inches": 8.83939607435667,
+      "rmse_z_inches": 10.513833699173725,
+      "negative_log_likelihood": 7.324193337069821,
+      "coverage_50": 0.5471522131430078,
+      "coverage_80": 0.8075995052616639
+    }
+  },
+  "selected_prior_strength": 50,
+  "test": {
+    "league": {
+      "n": 214377,
+      "rmse_x_inches": 8.978179564902252,
+      "rmse_z_inches": 11.279866541679729,
+      "negative_log_likelihood": 7.450616154586478,
+      "coverage_50": 0.5444380693824431,
+      "coverage_80": 0.799274175867747
+    },
+    "pitch_type": {
+      "n": 214377,
+      "rmse_x_inches": 8.95927934548567,
+      "rmse_z_inches": 10.663803364463469,
+      "negative_log_likelihood": 7.375414301139114,
+      "coverage_50": 0.5422549993702682,
+      "coverage_80": 0.7983878867602401
+    },
+    "pitcher_pitch_type": {
+      "n": 214377,
+      "rmse_x_inches": 8.74672926041543,
+      "rmse_z_inches": 10.450254621606856,
+      "negative_log_likelihood": 7.2649454685368315,
+      "coverage_50": 0.5334947312444899,
+      "coverage_80": 0.797711508230827
+    }
+  },
+  "limitations": [
+    "Naive glove target is a noisy proxy, not intended target ground truth.",
+    "Camera reconstruction uses observed trajectories; measurement error may be correlated with realized location.",
+    "Published inferred targets explicitly excluded: upstream infer_targets(a,a) fits in-sample.",
+    "No hitter model, Statcast join validation, or full product acceptance established by this report."
+  ]
+}
