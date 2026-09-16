@@ -1,0 +1,11 @@
+{
+  "game_pk": 776135,
+  "bridge_pitches": 315,
+  "matched_statcast": 315,
+  "target_rows": 302,
+  "targets_matched_statcast": 302,
+  "pitcher_id_agreement": 1.0,
+  "batter_id_agreement": 1.0,
+  "max_plate_difference_feet": 0.0003529760168607954,
+  "note": "One-game identity bridge verified; rounding and source trajectory differences require audit. Season-wide join not yet verified."
+}
