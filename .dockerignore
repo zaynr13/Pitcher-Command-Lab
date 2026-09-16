@@ -1,7 +1,0 @@
-.git
-.venv
-work
-data
-__pycache__
-docs
-*.zip
