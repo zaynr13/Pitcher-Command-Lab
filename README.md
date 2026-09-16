@@ -4,7 +4,7 @@
 
 A working MLB pitch-calling research application that separates an estimated target from realized execution, then predicts hitter response. The included frozen 2025 models support **365 pitchers and 307 hitters**. All player profiles, command distributions and response probabilities derive from downloaded observations and fitted models; there is no synthetic demo roster.
 
-**Status:** functional local research preview with temporal baseline evaluation. This is not yet a validated production coaching system. Public deployment has not been performed. GitHub publication is pending an accessible destination repository.
+**Status:** functional local research preview with temporal baseline evaluation. This is not yet a validated production coaching system. Public deployment has not been performed. Source and fitted artifacts are published at [zaynr13/Pitcher-Command-Lab](https://github.com/zaynr13/Pitcher-Command-Lab).
 
 ![Command Lab](docs/screenshot.png)
 
