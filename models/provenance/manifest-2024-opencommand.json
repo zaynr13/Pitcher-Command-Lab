@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://huggingface.co/datasets/tomdoyo/open-command/resolve/main/2024/targets.csv.gz",
+    "file": "targets-2024.csv.gz",
+    "sha256": "21a01949e3bb53b00b739d1c0a251fc7be6c709d22afc221d43a7a7cc5c6d58d",
+    "bytes": 63449659
+  },
+  {
+    "url": "https://huggingface.co/datasets/tomdoyo/open-command/resolve/main/2024/pbp_info.csv.gz",
+    "file": "pbp-2024.csv.gz",
+    "sha256": "7895855837fbc372ef1d4fa43658161a2dfc2b29d116048222ece6dfb4d0ef60",
+    "bytes": 106232060
+  }
+]
